@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
     progressBar = document.getElementById("progress-bar"),
     defaultSong = document.querySelector(".song");
 
-  let songs = ["/assets/audio/beyonce.mp3", "/assets/audio/dontstartnow.mp3"];
-  let thumbnails = ["/assets/img/lemonade.png", "/assets/img/dontstartnow.png"];
+  let songs = ["assets/audio/beyonce.mp3", "assets/audio/dontstartnow.mp3"];
+  let thumbnails = ["assets/img/lemonade.png", "assets/img/dontstartnow.png"];
   let songArtists = ["Beyonce", "Dua Lipa"];
   let songTitles = ["Don't Hurt Yourself", "Don't Start Now"];
 
@@ -26,12 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
       defaultSong.pause();
       isPlaying = false;
       thumbnail.style.transform = "scale(1)";
-      playPause.src = "/assets/svg/play.png";
+      playPause.src = "assets/svg/play.png";
     } else {
       defaultSong.play();
       isPlaying = true;
       thumbnail.style.transform = "scale(1.15)";
-      playPause.src = "/assets/svg/pause.png";
+      playPause.src = "assets/svg/pause.png";
     }
   }
 
